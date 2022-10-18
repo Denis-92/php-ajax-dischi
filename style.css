@@ -28,3 +28,10 @@ img {
 .song-container {
     background-color: aqua;
 }
+
+#filter-input {
+    width: 18rem;
+    margin: 1rem auto;
+    border: 5px solid blue;
+    padding: 1rem;
+}
