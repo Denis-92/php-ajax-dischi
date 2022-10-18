@@ -26,8 +26,12 @@
 
         <div id="inputs" class="container">
 
-            <input type="text" name="show_only" v-model="show_only" />
-            <input type="submit" value="Filter genre" @click="getAlbums(filter)" />
+            <form action="./index.html" method="get">
+
+                <input type="text" name="show_only" v-model="show_only" />
+                <input type="submit" value="Filter genre" @click="getSongs(show_only)" />
+
+            </form>
 
         </div>
 
