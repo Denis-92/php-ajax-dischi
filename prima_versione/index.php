@@ -15,7 +15,7 @@
 <div id="filter-input">
 
     <form action="./index.php" method="get">
-        <input type="text" name="show_only" value=" <?= $show_only ?> " />
+        <input type="text" name="show_only" value="<?= $show_only ?>" />
         <input type="submit" value="Filter">
     </form>
 
