@@ -12,5 +12,21 @@
 
 <?php include __DIR__ - "/database.php"; ?>
 
+<div id="filter-input">
+
+    <form action="./index.php" method="get">
+        <input type="text" name="show_only" value=" <?= $show_only ?> " />
+        <input type="submit" value="Filter">
+    </form>
+
+</div>
+
+<?php
+    foreach ( $data as $song ) {
+        echo "<div>";
+        echo "</div>";
+    }
+?>
+
 </body>
 </html>
