@@ -1,6 +1,6 @@
 <?php
 
-include __DIR__ . "/data_database.php";
+include __DIR__ . "/database_data.php";
 
 $show_only = "";
 
@@ -14,7 +14,7 @@ if ( $check_init_show_only ) {
 
     foreach ( $data as $song ) {
 
-        $check_show_all = strlen ( $filtshow_onlyer ) === 0;
+        $check_show_all = strlen ( $show_only ) === 0;
 
         $check_genre = strtolower ( $song ["genre"] ) === $show_only;
 
@@ -27,7 +27,7 @@ if ( $check_init_show_only ) {
     }
 
     $data = $result_filtered;
-    
+
 }
 
 ?>
