@@ -10,7 +10,7 @@ img {
 
 .container {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 1rem auto;
 
 }
 
@@ -22,7 +22,6 @@ img {
 #songs>* {
     width: 33%;
     padding: 1rem;
-
 }
 
 .song-container {
@@ -30,8 +29,7 @@ img {
 }
 
 #filter-input {
-    width: 18rem;
-    margin: 1rem auto;
-    border: 5px solid blue;
     padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid blue;
 }

@@ -12,7 +12,7 @@
 
 <?php include __DIR__ . "/database.php"; ?>
 
-<div id="filter-input">
+<div class="container" id="filter-input">
 
     <form action="./index.php" method="get">
         <input type="text" name="show_only" value="<?= $show_only ?>" />
