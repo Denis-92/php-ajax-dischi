@@ -28,7 +28,8 @@ img {
     background-color: aqua;
 }
 
-#filter-input {
+#filter-input,
+#inputs {
     padding: 1rem;
     text-align: center;
     border-bottom: 1px solid blue;

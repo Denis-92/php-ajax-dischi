@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue Dischi in PHP</title>
     <link rel="stylesheet" href="../style.css">
+    <script src="script.js" defer></script>
     <!-- vue -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.7.13/vue.min.js"
         integrity="sha512-9PmLIATEd4w0OxdTHq61p12lQqa8OtDC6nXu0+S1Icb800oxoADle+gaPfmAXLa35KSvk/6bGeNRfi3nq0Hvvw=="
@@ -23,13 +24,32 @@
 
     <div id="app">
 
-        <div id="inputs">
+        <div id="inputs" class="container">
 
             <input type="text" name="show_only" v-model="show_only" />
-            <input type="submit" value="Filter genre" />
+            <input type="submit" value="Filter genre" @click="getAlbums(filter)" />
 
         </div>
 
+        <div class="container" id="songs">
+
+            <div v-for="song in songs" :key="song.title">
+
+                <div class="song-container">
+
+                    <div>
+                        <img :src="song.poster" :alt="song.title" />
+                    </div>
+
+                    <h2>{{ song.title }}</h2>
+                    <p>{{ song.year }}</p>
+                    <p>{{ song.author }}</p>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
