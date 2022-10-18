@@ -10,7 +10,7 @@
 
 <body>
 
-<?php include __DIR__ - "/database.php"; ?>
+<?php include __DIR__ . "/database.php"; ?>
 
 <div id="filter-input">
 
