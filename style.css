@@ -19,7 +19,12 @@ img {
     flex-wrap: wrap;
 }
 
-.song-container {
+#songs>* {
+    width: 33%;
     padding: 1rem;
-    width: 25%;
+
+}
+
+.song-container {
+    background-color: aqua;
 }
