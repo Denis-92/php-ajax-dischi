@@ -7,7 +7,10 @@
     <title>Vue Dischi in PHP</title>
     <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
-    
+
+<?php include __DIR__ - "/database.php"; ?>
+
 </body>
 </html>
