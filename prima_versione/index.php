@@ -21,12 +21,19 @@
 
 </div>
 
-<?php
-    foreach ( $data as $song ) {
-        echo "<div>";
-        echo "</div>";
-    }
-?>
+<div class="container" id="songs">
+
+    <?php
+
+        foreach ( $data as $song ) {
+            echo "<div>";
+            include __DIR__ . "/component_song.php";
+            echo "</div>";
+        }
+
+    ?>
+
+</div>
 
 </body>
 </html>
